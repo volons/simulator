@@ -5,7 +5,8 @@ RUN apt-get update && \
 		git libtool-bin automake autoconf libexpat1-dev \
 		python-matplotlib python-serial python-wxgtk3.0 \
 		python-wxtools python-lxml python-scipy python-opencv \
-		ccache gawk python-pip python-pexpect htop && \
+		ccache gawk python-pip python-pexpect htop \
+		iproute2 dnsutils && \
 	rm -rf /var/lib/apt/lists/*
 
 RUN pip install \
